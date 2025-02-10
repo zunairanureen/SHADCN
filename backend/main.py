@@ -1,5 +1,5 @@
 from fastapi import FastAPI, File, UploadFile, HTTPException
-from fastapi.middleware.cors import CORSMiddleware  # Import CORS middleware
+from fastapi.middleware.cors import CORSMiddleware  
 from pydantic_models import QueryInput, QueryResponse, DocumentInfo, DeleteFileRequest
 from langchain_utils import get_rag_chain
 from sql_lite import initialize_database, insert_application_logs, get_chat_history, get_all_documents, insert_document_record, delete_document_record
@@ -10,18 +10,16 @@ import logging
 from datetime import datetime
 import shutil
 
-# Import Chroma functions
+
 from chroma import index_document_to_chroma, delete_doc_from_chroma
 
-# Configure logging
 logging.basicConfig(filename='app.log', level=logging.INFO)
 
 app = FastAPI()
 
-# CORS configuration
 origins = [
-    "http://localhost:3333",  # Add your frontend URL here
-    "https://shadcn-chatbot-kit.vercel.app",  # Add your production frontend URL here
+    "http://localhost:3333",  
+    "https://shadcn-chatbot-kit.vercel.app",  
 ]
 
 app.add_middleware(
@@ -32,10 +30,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Initialize the database at app startup
 initialize_database()
 
-# /chat endpoint - Get chat response from RAG system
 @app.post("/chat", response_model=QueryResponse)
 def chat(query_input: QueryInput):
     session_id = query_input.session_id
@@ -44,10 +40,8 @@ def chat(query_input: QueryInput):
     if not session_id:
         session_id = str(uuid.uuid4())
 
-    # Retrieve chat history
     chat_history = get_chat_history(session_id)
 
-    # Get RAG chain and invoke it for response
     rag_chain = get_rag_chain(query_input.model.value)
     response = rag_chain.invoke({
         "input": query_input.question,
@@ -56,13 +50,11 @@ def chat(query_input: QueryInput):
 
     answer = response['answer']
 
-    # Log application
     insert_application_logs(session_id, query_input.question, answer, query_input.model.value)
     logging.info(f"Session ID: {session_id}, AI Response: {answer}, Timestamp: {datetime.utcnow()}")
 
     return QueryResponse(answer=answer, session_id=session_id, model=query_input.model)
 
-# /upload-doc endpoint - Upload and index document
 @app.post("/upload-doc")
 def upload_and_index_document(file: UploadFile = File(...)):
     allowed_extensions = ['.pdf', '.docx', '.html']
@@ -74,7 +66,6 @@ def upload_and_index_document(file: UploadFile = File(...)):
     temp_file_path = f"temp_{file.filename}"
 
     try:
-        # Save the uploaded file to a temporary file
         with open(temp_file_path, "wb") as buffer:
             shutil.copyfileobj(file.file, buffer)
 
@@ -93,13 +84,11 @@ def upload_and_index_document(file: UploadFile = File(...)):
         if os.path.exists(temp_file_path):
             os.remove(temp_file_path)
 
-# /list-docs endpoint - List all documents
 @app.get("/list-docs", response_model=list[DocumentInfo])
 def list_documents(skip: int = 0, limit: int = 10):
     all_docs = get_all_documents()
     return all_docs[skip:skip+limit]
 
-# /delete-doc endpoint - Delete a document from the system
 @app.post("/delete-doc")
 def delete_document(request: DeleteFileRequest):
     try:

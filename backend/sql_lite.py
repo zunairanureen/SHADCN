@@ -2,12 +2,12 @@ import sqlite3
 from datetime import datetime
 import os
 
-DB_NAME = "chat_storage.db"  # You can specify a full path here if needed
+DB_NAME = "chat_storage.db"  
 
 def get_db_connection():
     """Establish a connection to the SQLite database."""
     conn = sqlite3.connect(DB_NAME)
-    conn.row_factory = sqlite3.Row  # To access columns by name
+    conn.row_factory = sqlite3.Row  
     return conn
 
 def create_application_logs():
@@ -22,7 +22,7 @@ def create_application_logs():
                          model TEXT,
                          created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP)''')
         conn.commit()
-        print("application_logs table created.")  # Debugging line
+        print("application_logs table created.")  
     except sqlite3.Error as e:
         print(f"Error creating application_logs table: {e}")
     finally:
@@ -67,7 +67,7 @@ def create_document_store():
                          filename TEXT,
                          upload_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP)''')
         conn.commit()
-        print("document_store table created.")  # Debugging line
+        print("document_store table created.")  
     except sqlite3.Error as e:
         print(f"Error creating document_store table: {e}")
     finally:
@@ -79,7 +79,7 @@ def insert_document_record(filename):
     cursor = conn.cursor()
     try:
         cursor.execute('INSERT INTO document_store (filename) VALUES (?)', (filename,))
-        file_id = cursor.lastrowid  # Get the last inserted ID
+        file_id = cursor.lastrowid  
         conn.commit()
         return file_id
     except sqlite3.Error as e:
@@ -120,6 +120,5 @@ def initialize_database():
     create_application_logs()
     create_document_store()
 
-# Initialize only if the script is run directly
 if __name__ == "__main__":
     initialize_database()

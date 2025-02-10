@@ -5,17 +5,15 @@ from langchain.chains import create_history_aware_retriever, create_retrieval_ch
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.messages import HumanMessage, AIMessage
 
-from chroma import vectorstore  # Ensure correct import
+from chroma import vectorstore  
 
 from dotenv import load_dotenv
-load_dotenv()  # Load environment variables from .env file
-
+load_dotenv()  
 
 
 retriever = vectorstore.as_retriever(search_type="similarity", search_kwargs={"k": 2})
 
 
-# System Prompt for Contextualizing Questions
 system_prompt = """
 You are a multi-functional assistant with the following strict guidelines:  
 
@@ -55,10 +53,9 @@ Question: {question}
 
 print("Updated system prompt loaded successfully.")
 
-# Now use the system prompt within the correct format for ChatPromptTemplate
 contextualize_q_prompt = ChatPromptTemplate.from_messages(
     [
-        ("system", system_prompt),  # Ensure the system message is in the correct form
+        ("system", system_prompt),  
         ("human", "{input}"),
         MessagesPlaceholder("chat_history"),
     ]

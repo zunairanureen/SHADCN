@@ -8,21 +8,20 @@ from langchain_openai.embeddings import OpenAIEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain_core.documents import Document
 
-# Configure logging
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Initialize text splitter with smaller chunk size for more precise context
 text_splitter = RecursiveCharacterTextSplitter(
-    chunk_size=500,  # Reduced chunk size for more granular context
-    chunk_overlap=50,  # Reduced overlap to prevent duplicate context
+    chunk_size=500,  
+    chunk_overlap=50,  
     length_function=len,
-    separators=["\n\n", "\n", " ", ""]  # More specific separators
+    separators=["\n\n", "\n", " ", ""]  
 )
 
-embedding_function = OpenAIEmbeddings(api_key='')
+embedding_function = OpenAIEmbeddings(api_key='') # Ensure API key is passed
 
-# Initialize Chroma with specific settings
+
 vectorstore = Chroma(
     persist_directory="./chroma_db",
     embedding_function=embedding_function,
@@ -63,13 +62,13 @@ def index_document_to_chroma(file_path: str, file_id: int) -> bool:
     try:
         logger.info(f"Starting indexing for document {file_path} with file_id {file_id}")
         
-        # Delete existing document
+        
         delete_doc_from_chroma(file_id)
         
-        # Load and split the document
+        
         splits = load_and_split_document(file_path)
         
-        # Add metadata to each split
+        
         for split in splits:
             split.metadata.update({
                 'file_id': str(file_id),
@@ -77,7 +76,7 @@ def index_document_to_chroma(file_path: str, file_id: int) -> bool:
                 'chunk_size': len(split.page_content)
             })
         
-        # Add documents to vectorstore
+       
         vectorstore.add_documents(splits)
         logger.info(f"Successfully indexed {len(splits)} chunks for file_id {file_id}")
         
@@ -92,11 +91,10 @@ def delete_doc_from_chroma(file_id: int) -> bool:
         file_id_str = str(file_id)
         logger.info(f"Deleting document chunks for file_id {file_id}")
         
-        # Get count of documents before deletion
+        
         docs_before = vectorstore._collection.get(where={"file_id": file_id_str})
         count_before = len(docs_before['ids']) if docs_before and 'ids' in docs_before else 0
         
-        # Delete documents
         vectorstore._collection.delete(where={"file_id": file_id_str})
         
         logger.info(f"Deleted {count_before} chunks for file_id {file_id}")
@@ -123,7 +121,6 @@ def query_document(query: str, file_id: int = None, k: int = 4):
             **search_kwargs
         )
         
-        # Log result metadata
         for idx, doc in enumerate(results):
             logger.info(f"Result {idx + 1} metadata: {doc.metadata}")
         
