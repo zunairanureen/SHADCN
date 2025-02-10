@@ -1,0 +1,229 @@
+INFO:root:Session ID: 1, User Query: whats about uplaoded file, Model: mixtral-8x7b-32768, Timestamp: 2025-01-31 13:40:05.477429
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 1, AI Response: The context provided describes a software developer with experience in building mobile applications and backend systems. They have developed a gym management app using Android Studio, integrating features such as emojis doing workouts and a timer. They have also engineered a scalable backend for a video streaming platform using Node.js and Express.js, with components such as user management, video handling, playlists, comments, subscriptions, tweets, and likes. There is no mention of uploaded files in the provided context., Timestamp: 2025-01-31 13:40:51.759655
+INFO:root:Session ID: 2, User Query: hi, Model: mixtral-8x7b-32768, Timestamp: 2025-01-31 13:59:33.681506
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 2, AI Response: Hello! I am a healthcare AI assistant. I can provide information and assistance related to health and wellness. I notice that you have provided some context about a developer named Ihtsham Mehmood. I can help answer questions about his background or skills. However, I don't see a specific question in your message.
+
+To provide some information based on the context, Ihtsham Mehmood is a detail-oriented and results-driven Computer Science graduate with practical experience in software development. He has a solid academic foundation in algorithms, data structures, and programming languages. He has a BS in Computer Science from the University of Gujrat with a CGPA of 3.00/4.00. He has also completed his FSc. Pre-Engineering with 78% marks and Matriculation with 81% marks.
+
+Ihtsham Mehmood has experience in building mobile applications using Android Studio. He built a gym management application that integrates features such as emoji doing workout and timer. He also implemented a flexible Like model for interactions across videos, comments, and tweets. For efficient data management, he used MongoDB with Mongoose and followed RESTful API principles. He also ensured robust security with JWT-based authentication.
+
+I hope this information is helpful. If you have any specific questions or need further assistance, please let me know!, Timestamp: 2025-01-31 14:00:23.455016
+INFO:root:Session ID: 3, User Query: whats about the document, Model: mixtral-8x7b-32768, Timestamp: 2025-01-31 14:14:06.168429
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 3, AI Response: Based on the context provided, it appears that the "EROZGAAR Program" is not further explained in the given information. Therefore, I am unable to provide a detailed answer about it. However, I can tell you that the other details provided show a strong background in technical skills, particularly in computer programming, web development, and app development using various languages and frameworks such as C++, C#, Python, JavaScript, Java, HTML, CSS, React, Next, ASP.NET, MySQL, mongoDB, and Git. Additionally, there is experience in course certifications for freelancing, DigiSkills Training Program, and Graphic Design. The individual has also demonstrated skills in developing a dynamic gym website and leading a team to develop a comprehensive job search app using React Native., Timestamp: 2025-01-31 14:14:52.626046
+INFO:root:Session ID: 69a34094-81f4-4f00-98cd-c824a29958cc, User Query: hello, Model: gpt-4o-mini, Timestamp: 2025-02-01 04:18:19.856672
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 69a34094-81f4-4f00-98cd-c824a29958cc, AI Response: Hello! How can I assist you today?, Timestamp: 2025-02-01 04:18:23.985565
+INFO:root:Session ID: 0819c1db-f82d-42b2-a8c1-6f3fc7b0a7fa, User Query: who are u , Model: gpt-4o-mini, Timestamp: 2025-02-01 04:18:50.495054
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 0819c1db-f82d-42b2-a8c1-6f3fc7b0a7fa, AI Response: I am a healthcare AI assistant designed to provide information and answer questions related to health and wellness. How can I assist you today?, Timestamp: 2025-02-01 04:18:53.873803
+INFO:root:Session ID: 7e8243c7-e970-43e2-86cf-18c5add58329, User Query: hello, Model: gpt-4o-mini, Timestamp: 2025-02-01 09:33:05.520237
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 7e8243c7-e970-43e2-86cf-18c5add58329, AI Response: Hello! How can I assist you today?, Timestamp: 2025-02-01 09:33:09.868494
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:root:Session ID: d9b479f9-e258-4040-8a1c-15c3fa9572b3, User Query: whats inside the uploaded document , Model: gpt-4o-mini, Timestamp: 2025-02-01 09:40:01.784436
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: d9b479f9-e258-4040-8a1c-15c3fa9572b3, AI Response: The document is an admit card for Talha Rizwan Malik, who is applying for the MBA (Weekend) program at Bahria University for the Spring 2025 semester. It includes the following information:
+
+- Candidate's Name: Talha Rizwan Malik
+- Application Number: 612
+- Father's Name: Rizwan Malik
+- CNIC / Form 'B' No: 33100-8384543-3
+- Test Institute: Islamabad E-8 Campus
+- Program Applied For: MBA (Weekend) - 2 Years
+- Entry Test Date and Time: 14 December 2024, from 2:30 PM to 4:30 PM
+- Test Centre: Islamabad E-8 Campus, Computer Lab, Auditorium
+
+There are also several instructions for candidates, such as:
+
+1. Remembering the admission portal password, which will also be used for the Computer-Based Test (CBT).
+2. Printing the Admit Card and bringing it to the Test Centre along with an original CNIC or another photo ID.
+3. Reporting to the campus 30 minutes prior to the test start time.
+4. Restrictions on mobile phones, tablets, or calculators during the test.
+5. A note that no breaks will be allowed once the test starts.
+
+Additionally, there is a note for PhD candidates regarding the development and submission of a research proposal., Timestamp: 2025-02-01 09:40:08.373398
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:root:Session ID: feb9cf0d-ed4f-4a8c-9aa9-68bf3d76bfae, User Query: what is inside the uploaded document , Model: gpt-4o-mini, Timestamp: 2025-02-01 09:44:49.259541
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: feb9cf0d-ed4f-4a8c-9aa9-68bf3d76bfae, AI Response: The uploaded document contains instructions and important information for candidates regarding an entry test. Here are the key points from the document:
+
+1. Mobile phones, tablets, and calculators are not allowed during the entry test.
+2. Once the test starts, no breaks will be allowed for candidates.
+3. Candidates should visit the BU website on the specified date to check the results of the entry test and the interview schedule for successful candidates.
+4. It is the responsibility of candidates to confirm their eligibility before applying online. They are accountable for any failure to meet the basic eligibility criteria at any stage of the process.
+5. There is a note for PhD candidates indicating that successful applicants will need to develop a quality research proposal and submit it to the Department Admission Committee.
+
+Additionally, there seems to be a section for candidate signatures, indicating acknowledgment of the instructions provided., Timestamp: 2025-02-01 09:44:54.688618
+INFO:root:Session ID: c4d5f9ad-3774-49bb-8281-484ee5885cc6, User Query: hello, Model: gpt-4o-mini, Timestamp: 2025-02-01 09:45:06.263521
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: c4d5f9ad-3774-49bb-8281-484ee5885cc6, AI Response: Hello! How can I assist you today?, Timestamp: 2025-02-01 09:45:09.940083
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:root:Session ID: 0e750e47-1977-4260-a712-b866482edc73, User Query: whats inside the uploaded document , Model: gpt-4o-mini, Timestamp: 2025-02-01 11:50:15.029563
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 0e750e47-1977-4260-a712-b866482edc73, AI Response: The document contains guidelines and important information for candidates regarding an entry test for a program at a university. Here are the key points:
+
+1. Mobile phones, tablets, and calculators are prohibited during the entry test.
+2. Candidates will not be allowed to take breaks once the test has started.
+3. Candidates should visit the university website on a specified date to check the results of the entry test and the interview schedule for successful candidates.
+4. Candidates must confirm their eligibility before applying online and are responsible for meeting the basic eligibility criteria at all stages.
+5. For PhD candidates, successful applicants will need to develop a quality research proposal and submit it to the Department Admission Committee.
+
+There is also a section for the candidate's signature at the end of the document., Timestamp: 2025-02-01 11:50:20.749389
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:root:Session ID: 59fe62b0-be1a-45d2-86e1-5db7ae11666d, User Query: now let me know whats inside the uploaded document, Model: gpt-4o-mini, Timestamp: 2025-02-01 11:51:03.751088
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 59fe62b0-be1a-45d2-86e1-5db7ae11666d, AI Response: The uploaded document is an admit card for the Bahria University entrance test. It contains the following information:
+
+- **Printed Date:** 16 November 2024
+- **Application Number:** 612
+- **Semester:** Spring-2025
+- **Name:** Talha Rizwan Malik
+- **Father's Name:** Rizwan Malik
+- **CNIC/Form 'B' Number:** 33100-8384543-3
+- **Institute:** Islamabad E-8 Campus
+- **Applied Program:** MBA (Weekend) - 2 Years
+- **Entry Test Date/Time:** 14 December 2024, from 02:30 PM to 04:30 PM
+- **Test Centre:** Islamabad E-8 Campus, Computer Lab, Auditorium
+
+**Instructions for Candidates:**
+1. Remember the admission portal password, which is needed for the Computer-Based Test (CBT).
+2. Print the Admit Card and bring it to the test center along with an original CNIC or another document with a photo ID (e.g., passport, original Matric/FSc certificate with a photograph).
+3. Report to the campus 30 minutes before the test starts.
+4. Mobile phones, tablets, and calculators are not allowed during the test.
+5. No breaks will be allowed once the test has started. 
+
+This information is crucial for attending the entrance test., Timestamp: 2025-02-01 11:51:11.263669
+INFO:root:Session ID: 93b7addc-e0c8-45ed-ad76-c504fb427855, User Query: i haeve uploaded a resume can u see this ?, Model: gpt-4o-mini, Timestamp: 2025-02-01 11:51:49.248063
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 93b7addc-e0c8-45ed-ad76-c504fb427855, AI Response: I'm sorry, but I don't have the capability to view or access uploaded documents, including resumes. However, if you have specific questions about your resume or need help with something related to it, feel free to share the details here, and I'll do my best to assist you!, Timestamp: 2025-02-01 11:51:53.381420
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:root:Session ID: 9af58a64-9712-436b-b095-4a6b18c33319, User Query: now  explain me about the pdf i have uploaded , Model: gpt-4o-mini, Timestamp: 2025-02-01 11:52:42.890048
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 9af58a64-9712-436b-b095-4a6b18c33319, AI Response: It seems that there is no PDF uploaded for me to analyze. If you can provide more details or text from the PDF, I'll be happy to help explain its contents!, Timestamp: 2025-02-01 11:52:46.422724
+INFO:root:Session ID: 0f9d70cc-3e12-42b2-8991-888e1a4d1a2b, User Query: hello, Model: gpt-4o-mini, Timestamp: 2025-02-01 12:18:19.025372
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 0f9d70cc-3e12-42b2-8991-888e1a4d1a2b, AI Response: Hello! How can I assist you today?, Timestamp: 2025-02-01 12:18:21.507369
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:root:Session ID: b8c1d381-63e7-4433-9ce1-79e4465de2e2, User Query: whats inside the document i have uploaded , Model: gpt-4o-mini, Timestamp: 2025-02-01 12:18:41.707798
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: b8c1d381-63e7-4433-9ce1-79e4465de2e2, AI Response: The document appears to be an official form or communication related to a tuition fee concession. It includes the following elements:
+
+1. Signatures and stamps from the Director of Academics/Campus and the Manager of Accounts, indicating their approval and acknowledgment of the documentation.
+2. Confirmation that all requisite documents have been received along with Form No. BUFW-CGPA.
+3. A statement indicating that a 50% tuition fee concession has been granted as per the rules of the university (BU).
+4. A fee challan, which is a payment receipt or acknowledgment, is referenced but not provided in the text.
+
+If you have specific questions or need further information, feel free to ask!, Timestamp: 2025-02-01 12:18:46.072909
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:root:Session ID: 80457e07-8784-4dbc-8978-edf4085f265e, User Query: now i have uploaded a new documen what inside it , Model: gpt-4o-mini, Timestamp: 2025-02-01 12:19:21.679749
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 80457e07-8784-4dbc-8978-edf4085f265e, AI Response: I'm sorry, but I don't have the capability to view or access uploaded documents. If you can provide a summary or the main points from the document, I would be happy to help you with any questions or further information you need regarding its content., Timestamp: 2025-02-01 12:19:24.779634
+INFO:root:Session ID: 3cc0f381-9b97-4361-a64b-b09239ed8e4e, User Query: i have uploaded a document whats inside it , Model: gpt-4o-mini, Timestamp: 2025-02-01 12:19:49.890628
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 3cc0f381-9b97-4361-a64b-b09239ed8e4e, AI Response: The document appears to be related to the processing of a tuition fee concession for a student. It includes sections for signatures and stamps from the Director of Academics/Campus and the Manager of Accounts, indicating that the necessary documents have been received along with a specific form (Form No. BUFW-CGPA). It states that a 50% tuition fee concession has been granted according to the rules of the institution. If you need further details or clarifications, please provide more specific questions., Timestamp: 2025-02-01 12:19:53.860996
+INFO:root:Session ID: 7af12534-768b-471d-85d7-b6f1feb43ddb, User Query: hello, Model: gpt-4o-mini, Timestamp: 2025-02-01 12:27:27.019790
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 7af12534-768b-471d-85d7-b6f1feb43ddb, AI Response: Hello! How can I assist you today?, Timestamp: 2025-02-01 12:27:29.444276
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:root:Session ID: 2e12dc51-cb1c-4190-9fc2-877b63962264, User Query: whats inside the document i have uploaded , Model: gpt-4o-mini, Timestamp: 2025-02-01 12:27:47.186916
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 2e12dc51-cb1c-4190-9fc2-877b63962264, AI Response: The document you've uploaded appears to be an application form for a program at an educational institution. It includes sections for the applicant's personal information, educational background, committee evaluations, recommendations, and verification details. Here's a brief overview of its components:
+
+1. **Applicant Information**: Personal details such as full name, CNIC/Form-B number, cell number, gender, program applied for, semester, and year, along with previous education details and percentages obtained.
+
+2. **Document Verification**: A section for the Departmental Admission Committee (DAC) to confirm that the submitted documents meet the eligibility criteria (such as CNIC/Form-B, SSC Certificate or equivalence, and SSC Marks Sheet or GCE).
+
+3. **DAC Recommendation**: Indication of whether the applicant has been selected or rejected, along with any reasons for rejection and any deficiency courses that may need to be completed.
+
+4. **HOD's Decision**: A section for the Head of Department to indicate their decision regarding the application.
+
+5. **Final Verification**: A section for Admissions/IT Staff to verify the information, with a note on whether it has been verified or any reasons if it has not.
+
+6. **Fee Deposit Information**: A reminder about the last date to deposit the admission fee, stating that extensions are not allowed.
+
+Overall, this document is used to assess and process applications for admission to a program at an educational institution., Timestamp: 2025-02-01 12:27:57.916367
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:root:Session ID: 15f19309-c112-4f33-801d-9a1f795562d6, User Query: i have uploaded a new document whats inside it , Model: gpt-4o-mini, Timestamp: 2025-02-01 12:28:33.438588
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 15f19309-c112-4f33-801d-9a1f795562d6, AI Response: The uploaded document appears to be an application form for a program, which includes personal information about the applicant such as their full name, CNIC/Form-B number, cell number, gender, the program they applied for, the semester, year, campus, and previous education details. It also contains sections for the applicant to fill in their percentage obtained in their previous education (Bachelor, Masters, etc.). 
+
+Additionally, there is a section for the Departmental Admission Committee (DAC) to verify the uploaded documents against the eligibility criteria, indicating whether documents like CNIC/Form-B, SSC Certificate or O-Level IBCC Equivalence, and SSC Marks Sheet or O-Level GCE have been successfully verified. Finally, there is a space for the applicant's signature. 
+
+To provide more specific insights, I would need further details about the new document you uploaded., Timestamp: 2025-02-01 12:28:39.170230
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:root:Session ID: d0a52783-e235-485e-b2be-8c3306d4ac84, User Query: whats inside the upoaded document , Model: gpt-4o-mini, Timestamp: 2025-02-01 12:32:22.692163
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: d0a52783-e235-485e-b2be-8c3306d4ac84, AI Response: The uploaded document appears to be an application form for a program, which includes fields for the applicant's personal information such as full name, identification number (CNIC/Form-B), contact information, gender, program applied for, semester, year, campus, previous education details, and percentage obtained in previous degrees. 
+
+Additionally, the document outlines the requirements for the Departmental Admission Committee (DAC) to verify whether specific documents have been uploaded by the candidate, including:
+- CNIC or Form-B
+- SSC Certificate or O-Level IBCC Equivalence
+- SSC Marks Sheet or O-Level GCE
+
+There is also a section for the applicant's signature, indicating their agreement or acknowledgment of the information provided., Timestamp: 2025-02-01 12:32:26.815885
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:root:Session ID: 2651f201-a443-48a0-b534-3479aabad593, User Query: uploaded a new  document whats inside it indly let me know , Model: gpt-4o-mini, Timestamp: 2025-02-01 12:33:09.649057
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 2651f201-a443-48a0-b534-3479aabad593, AI Response: It seems that the context you provided is related to an admissions application document, specifically detailing the applicant's information, previous education, and the Departmental Admission Committee's verification of uploaded documents. The document includes sections for the applicant’s personal details, educational background, and a checklist of documents such as the CNIC/Form-B, SSC Certificate, and SSC Marks Sheet that have been compared for eligibility criteria. 
+
+If you uploaded a new document, you may want to check the specific contents or updates within that document directly, as I am not able to retrieve or analyze the contents of documents beyond what you've shared in the context. If you need assistance with a specific part of the document or have any questions regarding the admissions process, feel free to ask!, Timestamp: 2025-02-01 12:33:14.830786
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:root:Session ID: 4bed1403-55fb-478e-b546-4aabdea80c1f, User Query: whats inside the uploaded document , Model: gpt-4o-mini, Timestamp: 2025-02-01 12:37:46.184097
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 4bed1403-55fb-478e-b546-4aabdea80c1f, AI Response: The uploaded document appears to be a form or a notification related to academic procedures, specifically concerning the receipt of required documents for a tuition fee concession. It mentions:
+
+- Confirmation that all requisite documents were received along with a specific form (Form No. BUFW-CGPA).
+- A note stating that a 50% tuition fee concession has been granted according to the relevant university rules.
+- There are sections for signatures and stamps from the Director of Academics/Campus and the Manager of Accounts, indicating official approval or acknowledgment.
+
+If you have specific questions about the content or need further clarification, feel free to ask!, Timestamp: 2025-02-01 12:37:51.626734
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:root:Session ID: 60e6c326-2e79-4be5-9753-4c520e9497f2, User Query: whats inside the uploaded document , Model: gpt-4o-mini, Timestamp: 2025-02-01 12:39:45.395691
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 60e6c326-2e79-4be5-9753-4c520e9497f2, AI Response: The uploaded document appears to be a formal acknowledgment related to the processing of an application for a tuition fee concession. It includes details such as:
+
+- Confirmation that all requisite documents have been received along with a specific form (Form No. BUFW-CGPA).
+- A statement indicating that a 50% tuition fee concession has been granted according to university rules.
+- Signatures and stamp areas for the Director of Academics/Campus and the Manager of Accounts, along with spaces for dates.
+
+The document likely serves as a record of the transaction and approval of the fee concession for the student., Timestamp: 2025-02-01 12:39:48.862776
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:root:Session ID: 06c911b5-b832-4f2a-88e5-c8312111f6ce, User Query: what inside the uploaded content , Model: gpt-4o-mini, Timestamp: 2025-02-01 12:41:00.841701
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 06c911b5-b832-4f2a-88e5-c8312111f6ce, AI Response: The uploaded content appears to be a document related to a tuition fee concession for students at a university or educational institution. It includes the following elements:
+
+1. A section for the Director of Academics or Campus to sign and stamp, indicating acknowledgment or approval.
+2. A statement confirming that all requisite documents have been received along with Form No. BUFW-CGPA.
+3. An indication that a 50% tuition fee concession is being granted according to university rules.
+4. A section for the Manager of Accounts to sign and stamp, also confirming the details.
+5. Spaces for dates to be filled in.
+
+Overall, it is a formal document related to financial aid or tuition concession processing at an educational institution., Timestamp: 2025-02-01 12:41:05.263314
