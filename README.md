@@ -35,7 +35,7 @@ POST /chat
 {
   "session_id": "optional-string",
   "question": "What does this document say about diabetes?",
-  "model": "groq"  // or any other model defined
+  "model": "groq" 
 }
 ```
 **Returns**:
