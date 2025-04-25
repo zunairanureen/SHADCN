@@ -197,8 +197,7 @@ newgrp docker
 | AWS_ECR_LOGIN_URI       | `566373416292.dkr.ecr.ap-south-1.amazonaws.com`    |
 | ECR_REPOSITORY_NAME     | `simple-app`                                       |
 
-### 4. **GitHub Actions Workflow**
-(See previous message for full YAML)
+
 
 ---
 
